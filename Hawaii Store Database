@@ -1,0 +1,23 @@
+CREATE TABLE storefront (id INTEGER PRIMARY KEY, product TEXT, price INTEGER, shipping_cost REAL, storage_fees REAL, restock TEXT);
+
+INSERT INTO storefront VALUES (1, "Bikinis", 45, 100, 123, 50);
+INSERT INTO storefront VALUES (2, "Board Shorts", 20, 15, 100, 33);
+INSERT INTO storefront VALUES (3, "Wet Suit Shirts", 100, 20, 24, 44);
+INSERT INTO storefront VALUES (4, "Wet Suit Bottoms, Full Length", 230, 33, 44, 56);
+INSERT INTO storefront VALUES (5, "Flip Flops", 44, 55, 76, 89);
+INSERT INTO storefront VALUES (6, "One Piece Swimsuit", 78, 99, 123, 43);
+INSERT INTO storefront VALUES (7, "High Cut Speedo", 30, 23, 43, 22);
+INSERT INTO storefront VALUES (8, "Blue Cut Swimwear", 43, 22, 32, 15);
+INSERT INTO storefront VALUES (9, "Modest Full Length Swimwear, Skirt", 200, 20, 23, 24);
+INSERT INTO storefront VALUES (10, "Modest Full Length Swimwear, No Skirt", 189, 90, 22, 23);
+INSERT INTO storefront VALUES (11, "Brazillian Cut Bikini Bottom", 78, 45, 100, 22);
+INSERT INTO storefront VALUES (12, "Ken Doll Swimwear", 60, 67, 68, 69);
+INSERT INTO storefront VALUES (13, "Nude Swimwear", 10, 11, 12, 13);
+INSERT INTO storefront VALUES (14, "Hawaiian Vacation Sandals", 22, 23, 24, 25);
+INSERT INTO storefront VALUES (15, "Sunblock WetSuit", 200, 30, 40, 50);
+
+SELECT * FROM storefront ORDER BY price DESC;
+
+SELECT MAX(price) FROM storefront;
+
+SELECT price, COUNT(*) FROM storefront GROUP BY price;
